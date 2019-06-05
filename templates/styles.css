@@ -1,10 +1,25 @@
+body{
+    background-image: aliceblue url('http://bgfons.com/uploads/water/water_texture2335.jpg');
+}
 .content{
  display: flex;
  align-content: center;
+ align-items: center;
+ background: rgba(255, 255, 255, 0.6);;
+ border: aquamarine 1px solid;
+ border-radius: 5px;
+}
 
+#message{
+    text-align: center;
+    font-size: 3rem;
 }
 
 .btn{
- background: green;
- 
+ background: coral;
+ color: white;
+ border: 1px white solid;
+ border-radius: 5px;
+ margin: 0 auto;
+ font-size: 2rem;
 }

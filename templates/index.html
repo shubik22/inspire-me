@@ -4,15 +4,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Inspire Me</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+                    body{
+                    background-image: aliceblue url('http://bgfons.com/uploads/water/water_texture2335.jpg');
+                }
+                .content{
+                display: flex;
+                align-content: center;
+                align-items: center;
+                background: rgba(255, 255, 255, 0.6);;
+                border: aquamarine 1px solid;
+                border-radius: 5px;
+                }
+
+                #message{
+                    text-align: center;
+                    font-size: 3rem;
+                }
+
+                .btn{
+                background: coral;
+                color: white;
+                border: 1px white solid;
+                border-radius: 5px;
+                margin: 3rem 3rem;
+                font-size: 2rem;
+                }
+    </style>
 </head>
 <body>
-    <div id='message' class='content'>
-    <p>
-        here are the instructions:
+    <div  class='content'>
+    <p id='message'>
+        {{ message (here are the instructions:) }}
     </p>
     </div>
-    <button class="btn">Be inspired</button>
+    <button class="btn">I want to be inspired</button>
 
 </body>
 </html>
