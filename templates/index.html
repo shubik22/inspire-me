@@ -5,8 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Inspire Me</title>
     <style>
-                    body{
-                    background-image: aliceblue url('http://bgfons.com/uploads/water/water_texture2335.jpg');
+                body{
+                    font-family: Arial, Helvetica, sans-serif;
+                    background-image: url('http://bgfons.com/uploads/water/water_texture2335.jpg');
+                    padding: 2rem;
+
                 }
                 .content{
                 display: flex;
@@ -29,16 +32,23 @@
                 border-radius: 5px;
                 margin: 3rem 3rem;
                 font-size: 2rem;
+                text-align: center;
                 }
     </style>
 </head>
 <body>
+    <div style=" color: coral; text-align: center">
+        <h1>Welcome to Inspire Me</h1>
+        <h2><i>the place that empowers you</i></h2>
+    </div>
     <div  class='content'>
     <p id='message'>
         {{ message }}
     </p>
     </div>
-    <button class="btn">I want to be inspired</button>
+    <div style=" width:100%; margin: 0 auto;">
+        <button class="btn">I want to be inspired</button>
+    </div>
 
 </body>
 </html>
