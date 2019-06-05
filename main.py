@@ -22,6 +22,12 @@ class MainPage(webapp2.RequestHandler):
         index_template = the_jinja_env.get_template("templates/index.html")
         self.response.write(index_template.render(message=get_quote()))
 
+class QuotePage(webapp2.RequestHandler):
+    def get(self):
+        self.response.headers["Content-Type"] = "text/plain"
+        self.response.write(get_quote())
+
 app = webapp2.WSGIApplication([
     ('/', MainPage),
+    ('/get-quote', QuotePage),
 ], debug=True)
