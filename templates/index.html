@@ -49,6 +49,16 @@
     <div style=" width:100%; margin: 0 auto;">
         <button class="btn">I want to be inspired</button>
     </div>
-
+    <script type="text/javascript">
+        const btn = document.querySelector('button');
+        const msgElement = document.querySelector('#message');
+        btn.addEventListener('click', () => {
+            fetch('http://localhost:8080/get-quote')
+                .then(resp => resp.text())
+                .then(quote => {
+                    msgElement.textContent = quote;
+                });
+        });
+    </script>
 </body>
 </html>
