@@ -9,15 +9,17 @@
                     font-family: Arial, Helvetica, sans-serif;
                     background-image: url('http://bgfons.com/uploads/water/water_texture2335.jpg');
                     padding: 2rem;
+                    background-color: rgba(255, 255, 255, 0.5);
+                    background-blend-mode: color-dodge;
 
                 }
                 .content{
-                display: flex;
-                align-content: center;
-                align-items: center;
-                background: rgba(255, 255, 255, 0.6);;
-                border: aquamarine 1px solid;
-                border-radius: 5px;
+                    display: flex;
+                    align-content: center;
+                    align-items: center;
+                    background: rgba(255, 255, 255, 0.6);;
+                    border: aquamarine 1px solid;
+                    border-radius: 5px;
                 }
 
                 #message{
@@ -34,6 +36,7 @@
                 font-size: 2rem;
                 text-align: center;
                 }
+                
     </style>
 </head>
 <body>
@@ -46,8 +49,8 @@
         {{ message }}
     </p>
     </div>
-    <div style=" width:100%; margin: 0 auto;">
-        <button class="btn">I want to be inspired</button>
+    <div style=" margin: 2rem auto; text-align: center;">
+        <button class="btn" >I want to be inspired</button>
     </div>
 
 </body>
